@@ -1,0 +1,13 @@
+<hello name="{{ name }}"></hello>
+<dl class="row">
+  <dt class="col-sm-6">Title:</dt>
+  <dt class="col-sm-6">{{ MovieList.title }}</dt>
+
+  <dt class="col-sm-6">Year:</dt>
+  <dt class="col-sm-6">{{ MovieList.year }}</dt>
+
+  <dt class="col-sm-6">Angular</dt>
+  <dt class="col-sm-6"><a [href]="MovieList.link">Link</a></dt>
+</dl>
+<br />
+<button (click) class="btn btn-primary">Checkout</button>
