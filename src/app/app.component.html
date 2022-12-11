@@ -1,6 +1,6 @@
 <hello name="{{ name }}"></hello>
 <dl class="row">
-  <dt class="col-sm-6">Title:</dt>
+  <dt (mouseover)="titleHover('hovered')" class="col-sm-6">Title:</dt>
   <dt class="col-sm-6">{{ MovieList.title }}</dt>
 
   <dt class="col-sm-6">Year:</dt>
@@ -10,4 +10,4 @@
   <dt class="col-sm-6"><a [href]="MovieList.link">Link</a></dt>
 </dl>
 <br />
-<button (click)="onCheckout()" class="btn btn-primary">Checkout</button>
+<button (click)="onCheckout($event)" class="btn btn-primary">Checkout</button>

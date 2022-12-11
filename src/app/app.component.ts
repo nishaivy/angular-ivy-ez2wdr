@@ -12,7 +12,10 @@ export class AppComponent {
     year: 2022,
     link: 'https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies/set',
   };
-  onCheckout() {
-    console.log('checkout');
+  onCheckout(event) {
+    console.log('checkout', event.target);
+  }
+  titleHover(message) {
+    console.log(message + ' on title');
   }
 }
